@@ -333,7 +333,7 @@ namespace String_Calculator
             this.button17.TabIndex = 20;
             this.button17.Text = "X";
             this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.onClick);
+            this.button17.Click += new System.EventHandler(this.Multipl);
             // 
             // button18
             // 
@@ -349,7 +349,7 @@ namespace String_Calculator
             this.button18.TabIndex = 19;
             this.button18.Text = "÷";
             this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.onClick);
+            this.button18.Click += new System.EventHandler(this.Div);
             // 
             // button19
             // 
@@ -409,7 +409,7 @@ namespace String_Calculator
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 

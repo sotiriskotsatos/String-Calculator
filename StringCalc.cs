@@ -8,13 +8,38 @@ namespace String_Calculator
 {
     class StringCalc
     {
-        public string Calc(string [] subStrings)
+        public static string Calc(string [] subStrings)
         {
-            foreach (var str in subStrings)
+            for (int i= 0; i<subStrings.Length;i++)
             {
-                if (str.Equals("*")|| str.Equals("/"))
+                if (subStrings[i].Equals("*"))
+                {
+                    subStrings[i] = (Convert.ToDouble(subStrings[i - 1]) *Convert.ToDouble(subStrings[i + 1])).ToString();
+                    subStrings[i - 1] = subStrings[i + 1] = "e";
+                }
+                else if (subStrings[i].Equals("/"))
+                {
+                    subStrings[i] = (Convert.ToDouble(subStrings[i - 1]) / Convert.ToDouble(subStrings[i + 1])).ToString();
+                    subStrings[i - 1] = subStrings[i + 1] = "e";
+                }
+                subStrings = subStrings.Where(x => !x.Equals("e")).ToArray();
             }
-            return 
+
+            for (int i = 0; i < subStrings.Length; i++)
+            {
+                if (subStrings[i].Equals("+"))
+                {
+                    subStrings[i] = (Convert.ToDouble(subStrings[i - 1]) + Convert.ToDouble(subStrings[i + 1])).ToString();
+                    subStrings[i - 1] = subStrings[i + 1] = "e";
+                }
+                else if (subStrings[i].Equals("-"))
+                {
+                    subStrings[i] = (Convert.ToDouble(subStrings[i - 1]) - Convert.ToDouble(subStrings[i + 1])).ToString();
+                    subStrings[i - 1] = subStrings[i + 1] = "e";
+                }
+                subStrings = subStrings.Where(x => !x.Equals("e")).ToArray();
+            }
+            return subStrings[0];
         }
     }
 }

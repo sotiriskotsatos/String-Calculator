@@ -9,9 +9,9 @@ namespace String_Calculator
 {
     class String_Splitter
     {
-        public string[] SplitStr(string toSplit)
+        public static string[] SplitStr(string toSplit)
         {
-            return Regex.Split(toSplit, (@"\D"));
+            return Regex.Split(toSplit, @"\D+");
         }
     }
 }

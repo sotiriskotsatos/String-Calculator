@@ -34,7 +34,17 @@ namespace String_Calculator
 
         private void Calculate(object sender, EventArgs e)
         {
+            textBox1.Text = StringCalc.Calc(String_Splitter.SplitStr(textBox1.Text));
+        }
 
+        private void Multipl(object sender, EventArgs e)
+        {
+            textBox1.Text += "*";
+        }
+
+        private void Div(object sender, EventArgs e)
+        {
+            textBox1.Text += "/";
         }
     }
 }
