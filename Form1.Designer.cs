@@ -68,7 +68,6 @@ namespace String_Calculator
             // 
             // button1
             // 
-            this.button1.AutoEllipsis = true;
             this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -84,7 +83,6 @@ namespace String_Calculator
             // 
             // button2
             // 
-            this.button2.AutoEllipsis = true;
             this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -100,7 +98,6 @@ namespace String_Calculator
             // 
             // button4
             // 
-            this.button4.AutoEllipsis = true;
             this.button4.AutoSize = true;
             this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -116,7 +113,6 @@ namespace String_Calculator
             // 
             // button5
             // 
-            this.button5.AutoEllipsis = true;
             this.button5.AutoSize = true;
             this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -128,10 +124,10 @@ namespace String_Calculator
             this.button5.TabIndex = 7;
             this.button5.Text = "C";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.ClearText);
             // 
             // button6
             // 
-            this.button6.AutoEllipsis = true;
             this.button6.AutoSize = true;
             this.button6.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -147,7 +143,6 @@ namespace String_Calculator
             // 
             // button7
             // 
-            this.button7.AutoEllipsis = true;
             this.button7.AutoSize = true;
             this.button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -157,12 +152,12 @@ namespace String_Calculator
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(105, 51);
             this.button7.TabIndex = 5;
-            this.button7.Text = "CE";
+            this.button7.Text = "Off";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.OffButton);
             // 
             // button3
             // 
-            this.button3.AutoEllipsis = true;
             this.button3.AutoSize = true;
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -178,7 +173,6 @@ namespace String_Calculator
             // 
             // button8
             // 
-            this.button8.AutoEllipsis = true;
             this.button8.AutoSize = true;
             this.button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -194,7 +188,6 @@ namespace String_Calculator
             // 
             // button9
             // 
-            this.button9.AutoEllipsis = true;
             this.button9.AutoSize = true;
             this.button9.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -210,7 +203,6 @@ namespace String_Calculator
             // 
             // button10
             // 
-            this.button10.AutoEllipsis = true;
             this.button10.AutoSize = true;
             this.button10.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -226,7 +218,6 @@ namespace String_Calculator
             // 
             // button11
             // 
-            this.button11.AutoEllipsis = true;
             this.button11.AutoSize = true;
             this.button11.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -242,7 +233,6 @@ namespace String_Calculator
             // 
             // button12
             // 
-            this.button12.AutoEllipsis = true;
             this.button12.AutoSize = true;
             this.button12.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -258,7 +248,6 @@ namespace String_Calculator
             // 
             // button13
             // 
-            this.button13.AutoEllipsis = true;
             this.button13.AutoSize = true;
             this.button13.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -289,7 +278,6 @@ namespace String_Calculator
             // 
             // button15
             // 
-            this.button15.AutoEllipsis = true;
             this.button15.AutoSize = true;
             this.button15.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -305,7 +293,6 @@ namespace String_Calculator
             // 
             // button16
             // 
-            this.button16.AutoEllipsis = true;
             this.button16.AutoSize = true;
             this.button16.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -321,7 +308,6 @@ namespace String_Calculator
             // 
             // button17
             // 
-            this.button17.AutoEllipsis = true;
             this.button17.AutoSize = true;
             this.button17.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -337,7 +323,6 @@ namespace String_Calculator
             // 
             // button18
             // 
-            this.button18.AutoEllipsis = true;
             this.button18.AutoSize = true;
             this.button18.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -353,7 +338,6 @@ namespace String_Calculator
             // 
             // button19
             // 
-            this.button19.AutoEllipsis = true;
             this.button19.AutoSize = true;
             this.button19.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -365,10 +349,10 @@ namespace String_Calculator
             this.button19.TabIndex = 18;
             this.button19.Text = "%";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.Percentage);
             // 
             // button20
             // 
-            this.button20.AutoEllipsis = true;
             this.button20.AutoSize = true;
             this.button20.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button20.Cursor = System.Windows.Forms.Cursors.Hand;

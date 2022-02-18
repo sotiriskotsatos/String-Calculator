@@ -11,7 +11,7 @@ namespace String_Calculator
     {
         public static string[] SplitStr(string toSplit)
         {
-            return Regex.Split(toSplit, @"\D+");
+            return Regex.Split(toSplit, @"(\D)");
         }
     }
 }

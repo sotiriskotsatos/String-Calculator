@@ -46,5 +46,21 @@ namespace String_Calculator
         {
             textBox1.Text += "/";
         }
+
+        private void Percentage(object sender, EventArgs e)
+        {
+
+            textBox1.Text = double.TryParse(textBox1.Text, out double i) ? (i / 100).ToString() + "%" : "Please use numeric expression with the % operator";
+        }
+
+        private void OffButton(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ClearText(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+        }
     }
 }

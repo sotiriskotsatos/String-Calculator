@@ -12,31 +12,24 @@ namespace String_Calculator
         {
             for (int i= 0; i<subStrings.Length;i++)
             {
-                if (subStrings[i].Equals("*"))
+                if (subStrings[i].Equals("*") || subStrings[i].Equals("/"))
                 {
-                    subStrings[i] = (Convert.ToDouble(subStrings[i - 1]) *Convert.ToDouble(subStrings[i + 1])).ToString();
+                    subStrings[i] = subStrings[i].Equals("*")?
+                                   (Convert.ToDouble(subStrings[i - 1]) *Convert.ToDouble(subStrings[i + 1])).ToString()
+                                 : (Convert.ToDouble(subStrings[i - 1]) / Convert.ToDouble(subStrings[i + 1])).ToString();
                     subStrings[i - 1] = subStrings[i + 1] = "e";
-                }
-                else if (subStrings[i].Equals("/"))
-                {
-                    subStrings[i] = (Convert.ToDouble(subStrings[i - 1]) / Convert.ToDouble(subStrings[i + 1])).ToString();
-                    subStrings[i - 1] = subStrings[i + 1] = "e";
-                }
+                }                
                 subStrings = subStrings.Where(x => !x.Equals("e")).ToArray();
             }
-
             for (int i = 0; i < subStrings.Length; i++)
             {
-                if (subStrings[i].Equals("+"))
+                if (subStrings[i].Equals("+") || subStrings[i].Equals("-"))
                 {
-                    subStrings[i] = (Convert.ToDouble(subStrings[i - 1]) + Convert.ToDouble(subStrings[i + 1])).ToString();
+                    subStrings[i] = subStrings[i].Equals("+")?
+                                  (Convert.ToDouble(subStrings[i - 1]) + Convert.ToDouble(subStrings[i + 1])).ToString()
+                                : (Convert.ToDouble(subStrings[i - 1]) - Convert.ToDouble(subStrings[i + 1])).ToString();
                     subStrings[i - 1] = subStrings[i + 1] = "e";
-                }
-                else if (subStrings[i].Equals("-"))
-                {
-                    subStrings[i] = (Convert.ToDouble(subStrings[i - 1]) - Convert.ToDouble(subStrings[i + 1])).ToString();
-                    subStrings[i - 1] = subStrings[i + 1] = "e";
-                }
+                }                
                 subStrings = subStrings.Where(x => !x.Equals("e")).ToArray();
             }
             return subStrings[0];
