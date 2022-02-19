@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace String_Calculator
 {
@@ -11,7 +6,7 @@ namespace String_Calculator
     {
         public static string[] SplitStr(string toSplit)
         {
-            return Regex.Split(toSplit, @"(\D)");
+            return Regex.Split(toSplit, @"(\D)"); //split the string to multiple strings containing operators
         }
     }
 }
