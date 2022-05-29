@@ -64,7 +64,7 @@ namespace String_Calculator
             this.textBox1.Size = new System.Drawing.Size(438, 24);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // button1
             // 
@@ -79,7 +79,7 @@ namespace String_Calculator
             this.button1.TabIndex = 1;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.onClick);
+            this.button1.Click += new System.EventHandler(this.OnClick);
             // 
             // button2
             // 
@@ -94,7 +94,7 @@ namespace String_Calculator
             this.button2.TabIndex = 2;
             this.button2.Text = "3";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.onClick);
+            this.button2.Click += new System.EventHandler(this.OnClick);
             // 
             // button4
             // 
@@ -109,7 +109,7 @@ namespace String_Calculator
             this.button4.TabIndex = 3;
             this.button4.Text = "2";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.onClick);
+            this.button4.Click += new System.EventHandler(this.OnClick);
             // 
             // button5
             // 
@@ -169,7 +169,7 @@ namespace String_Calculator
             this.button3.TabIndex = 13;
             this.button3.Text = "5";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.onClick);
+            this.button3.Click += new System.EventHandler(this.OnClick);
             // 
             // button8
             // 
@@ -184,7 +184,7 @@ namespace String_Calculator
             this.button8.TabIndex = 12;
             this.button8.Text = "6";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.onClick);
+            this.button8.Click += new System.EventHandler(this.OnClick);
             // 
             // button9
             // 
@@ -199,7 +199,7 @@ namespace String_Calculator
             this.button9.TabIndex = 11;
             this.button9.Text = "4";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.onClick);
+            this.button9.Click += new System.EventHandler(this.OnClick);
             // 
             // button10
             // 
@@ -214,7 +214,7 @@ namespace String_Calculator
             this.button10.TabIndex = 10;
             this.button10.Text = "8";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.onClick);
+            this.button10.Click += new System.EventHandler(this.OnClick);
             // 
             // button11
             // 
@@ -229,7 +229,7 @@ namespace String_Calculator
             this.button11.TabIndex = 9;
             this.button11.Text = "9";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.onClick);
+            this.button11.Click += new System.EventHandler(this.OnClick);
             // 
             // button12
             // 
@@ -244,7 +244,7 @@ namespace String_Calculator
             this.button12.TabIndex = 8;
             this.button12.Text = "7";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.onClick);
+            this.button12.Click += new System.EventHandler(this.OnClick);
             // 
             // button13
             // 
@@ -259,7 +259,7 @@ namespace String_Calculator
             this.button13.TabIndex = 16;
             this.button13.Text = ",";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.onClick);
+            this.button13.Click += new System.EventHandler(this.OnClick);
             // 
             // button14
             // 
@@ -289,7 +289,7 @@ namespace String_Calculator
             this.button15.TabIndex = 14;
             this.button15.Text = "0";
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.onClick);
+            this.button15.Click += new System.EventHandler(this.OnClick);
             // 
             // button16
             // 
@@ -304,7 +304,7 @@ namespace String_Calculator
             this.button16.TabIndex = 21;
             this.button16.Text = "-";
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.onClick);
+            this.button16.Click += new System.EventHandler(this.OnClick);
             // 
             // button17
             // 
@@ -364,7 +364,7 @@ namespace String_Calculator
             this.button20.TabIndex = 17;
             this.button20.Text = "+";
             this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.onClick);
+            this.button20.Click += new System.EventHandler(this.OnClick);
             // 
             // Form1
             // 

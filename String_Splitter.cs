@@ -2,11 +2,11 @@
 
 namespace String_Calculator
 {
-    class String_Splitter
+    public class String_Splitter
     {
         public static string[] SplitStr(string toSplit)
         {
-            return Regex.Split(toSplit, @"(\D)"); //split the string to multiple strings containing operators
+            return (Regex.Split(toSplit, @"(\D)")); //split the string to multiple strings containing operators
         }
     }
 }
